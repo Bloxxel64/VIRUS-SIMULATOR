@@ -1,4 +1,3 @@
-
 #import necessary behaviors
 import time
 import sys
@@ -31,29 +30,28 @@ print("")
 gamemode = input("Gamemode: ")
 
 if gamemode == "1":
-  time.sleep(textspeed)
-  print("Choose gametype...")
-  print("")
-  print("1: Quick Game, Jump Right into the Action.")
-  print("2: Custom. Change EVERY aspect of the game.")
-  print("")
-  gametype=input("Gametype: ")
-  if gametype == "1":
     time.sleep(textspeed)
-    os.system('python quickgame.py')
+    print("Choose gametype...")
+    print("")
+    print("1: Quick Game, Jump Right into the Action.")
+    print("2: Custom. Change EVERY aspect of the game.")
+    print("")
+    gametype = input("Gametype: ")
+    if gametype == "1":
+        time.sleep(textspeed)
+        os.system('python quickgame.py')
 
 elif gamemode == "2":
-  time.sleep(textspeed)
-  print("multiplayer coming soon.")
-  print("goodbye. :)")
-  print("")
-  sys.exit
+    time.sleep(textspeed)
+    print("multiplayer coming soon.")
+    print("goodbye. :)")
+    print("")
+    sys.exit
 
 elif gamemode == "3":
-  time.sleep(textspeed)
-  os.system('python settings.py')
+    time.sleep(textspeed)
+    os.system('python settings.py')
 
 elif gamemode == "4":
-  print("Bye Bye")
-  sys.exit
-
+    print("Bye Bye")
+    sys.exit
